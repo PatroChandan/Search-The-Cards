@@ -5,13 +5,14 @@
     box-sizing: border-box;
     font: 'Poppins', sans-serif;
     font-family: 'Poppins', sans-serif;
-    background-color: #0FC1F9;
+    
 }
 
 header{
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
+    background-color: #0FC1F9;
 }
 header .logo h1{
     font-size: 1.5em;
@@ -100,8 +101,12 @@ header nav ul li button:hover{
 }
 
 /* card section */
+.card-section{
+    background-color: #0FC1F9;
+}
 .card-section h1{
     text-align: center;
+    color: rgb(227, 167, 14);
 }
 .container-card{
     display: flex;
@@ -110,6 +115,7 @@ header nav ul li button:hover{
     gap: 30px;
     padding-top: 20px;
     text-align: center;
+    background-color: #0FC1F9;
 }
 .container-card .card{
     padding: 15px;
@@ -119,13 +125,18 @@ header nav ul li button:hover{
     width: 350px;
     border-radius: 5px;
     text-align: center;
-    animation: fadeIn .2s linear;
+    /* animation: fadeIn .2s linear; */
+    transition: .2s;
 }
-@keyframes fadeIn{
+/* @keyframes fadeIn{
     0%{
         transform: scale(.5) translateY(-10px);
         opacity: 0;
     }
+} */
+
+.container-card .card:hover{
+    transform: scale(1.1);
 }
 .container-card .card img{
     width: 100%;
@@ -140,7 +151,7 @@ header nav ul li button:hover{
 }
 
 footer{
-    margin-top: 20px;
+    /* margin-top: 20px; */
     padding: 1em 2em;
     display: flex;
     justify-content: space-between;
@@ -149,7 +160,7 @@ footer{
 footer .logo h1{
     font-size: 1.5em;
     font-weight: 300;
-    color: #353539;
+    color: #a5a1a1;
 }
 footer .logo h1 span{
     font-weight: 800;
@@ -162,7 +173,7 @@ footer nav ul{
 }
 footer nav ul li{
     margin: 0 24px;
-    color: #353535;
+    color: #a5a1a1;
     transition: 0.3s;
     cursor: pointer;
 }
